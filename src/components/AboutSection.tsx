@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Typography, Row, Col, Card, Statistic, Divider } from 'antd';
+import { Typography, Row, Col, Card, Divider } from 'antd';
 import { UserOutlined, EnvironmentOutlined, PhoneOutlined, MailOutlined } from '@ant-design/icons';
 import { usePortfolio } from '../contexts/PortfolioContext';
 
@@ -8,7 +8,7 @@ const { Title, Paragraph, Text } = Typography;
 
 const AboutSection: React.FC = () => {
   const { state } = usePortfolio();
-  const { personalInfo, projects } = state;
+  const { personalInfo } = state;
 
   const containerVariants = {
     hidden: { opacity: 0 },
